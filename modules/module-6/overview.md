@@ -1,11 +1,11 @@
 # Module 6: Time, drift, and monitoring
 ## Theme
 
-Time, drift, and monitoring
+Time, drift, and [monitoring](../../glossary.md#monitoring)
 
 ## Essential Question
 
-What changes after a model leaves the notebook?
+What changes after a [model](../../glossary.md#model) leaves the [notebook](../../glossary.md#notebook)?
 
 ## Module Components
 
@@ -14,15 +14,15 @@ What changes after a model leaves the notebook?
 - `Slides`: presentation sequence for seminar or lecture delivery
 - `Narration`: spoken version of the slide flow
 - `Rubric`: criteria for evaluating the module artifact
-- `Notebook`: executable lab aligned with the module theme using synthetic tabular observations with features, labels, train/test split, baseline score, and error slices
+- `Notebook`: executable lab aligned with the module theme using synthetic tabular observations with [features](../../glossary.md#feature), labels, train/test split, [baseline](../../glossary.md#baseline) score, and error slices
 
 ## Module Artifact
 
-predictive modeling report with baseline comparison, validation evidence, and model card focused on time, drift, and monitoring: Define drift checks and monitoring metrics for a deployed predictor.
+predictive modeling report with baseline comparison, [validation](../../glossary.md#validation) evidence, and model card focused on time, drift, and monitoring: Define drift checks and monitoring metrics for a deployed predictor.
 
 ## Professional Setting
 
-Students work as if advising an analytics team choosing a predictive model for an operational decision. Their work must be intelligible to analytics lead, domain owner, operations manager, and model risk reviewer.
+Students work as if advising an analytics team choosing a predictive model for an operational decision. Their work must be intelligible to analytics lead, domain owner, operations manager, and model [risk](../../glossary.md#risk) reviewer.
 
 <!-- BEGIN COURSE EXPERIENCE REMEDIATION -->
 ## Use This Module in Order

@@ -2,13 +2,13 @@
 
 ## Time, drift, and monitoring
 
-What changes after a model leaves the notebook?
+What changes after a [model](../../glossary.md#model) leaves the [notebook](../../glossary.md#notebook)?
 
 ### Professional Scenario
 
-You are advising **an analytics team choosing a predictive model for an operational decision**. The immediate task is to decide what evidence would make a recommendation credible, what risks remain unresolved, and what should happen next. The module's work product is: **predictive modeling report with baseline comparison, validation evidence, and model card focused on time, drift, and monitoring: Define drift checks and monitoring metrics for a deployed predictor.**.
+You are advising **an analytics team choosing a predictive model for an operational decision**. The immediate task is to decide what evidence would make a recommendation credible, what [risks](../../glossary.md#risk) remain unresolved, and what should happen next. The module's work product is: **predictive modeling report with [baseline](../../glossary.md#baseline) comparison, [validation](../../glossary.md#validation) evidence, and model card focused on time, drift, and [monitoring](../../glossary.md#monitoring): Define drift checks and monitoring metrics for a deployed predictor.**.
 
-The available lab data is deliberately limited: synthetic tabular observations with features, labels, train/test split, baseline score, and error slices. Treat it as a proxy for reasoning and method practice, not as proof that a real deployment is ready. A graduate-level submission must distinguish between what the proxy exercise demonstrates and what would still require institutional data, stakeholder review, and operational testing.
+The available lab data is deliberately limited: synthetic tabular observations with [features](../../glossary.md#feature), labels, train/test split, baseline score, and error slices. Treat it as a proxy for reasoning and method practice, not as proof that a real [deployment](../../glossary.md#deployment) is ready. A graduate-level submission must distinguish between what the proxy exercise demonstrates and what would still require institutional data, stakeholder review, and operational testing.
 
 ### Core Concepts
 
@@ -20,7 +20,7 @@ The available lab data is deliberately limited: synthetic tabular observations w
 
 ## Why This Module Matters
 
-In **AINS6002: Machine Learning & Predictive Modeling**, this module contributes to the larger course arc by requiring students to turn a domain problem into an inspectable technical artifact. The standard is not "the notebook ran." The standard is that another reviewer can understand the decision, reproduce the reasoning, and challenge the assumptions.
+In **AINS6002: [Machine Learning](../../glossary.md#machine-learning) & Predictive Modeling**, this module contributes to the larger course arc by requiring students to turn a domain problem into an inspectable technical artifact. The standard is not "the notebook ran." The standard is that another reviewer can understand the decision, reproduce the reasoning, and challenge the assumptions.
 
 ### Method Pattern
 
@@ -34,10 +34,10 @@ In **AINS6002: Machine Learning & Predictive Modeling**, this module contributes
 ### Failure Modes To Check
 
 - **Measurement mismatch:** the metric optimizes something adjacent to, but not identical with, the real decision.
-- **Context loss:** important operational or human factors are absent from the data.
-- **Automation bias:** users may over-trust a score, classification, or recommendation.
+- **Context [loss](../../glossary.md#loss):** important operational or human factors are absent from the data.
+- **[Automation](../../glossary.md#automation) bias:** users may over-trust a score, classification, or recommendation.
 - **Equity and access risk:** affected groups may experience different error rates or burdens.
-- **Governance gap:** no one owns monitoring, escalation, or rollback after launch.
+- **[Governance](../../glossary.md#governance) gap:** no one owns monitoring, escalation, or rollback after launch.
 
 ## Study Questions
 
@@ -52,7 +52,7 @@ In **AINS6002: Machine Learning & Predictive Modeling**, this module contributes
 
 Return to the professional situation for this module: You are advising **an analytics team choosing a predictive model for an operational decision**. The immediate task is to decide what evidence would make a recommendation credible, what risks remain unresolved, and what should happen next. The module's work product is: **predictive modeling report with baseline comparison, validation evidence, and model card focused on time, drift, and monitoring: Define drift checks and monitoring metrics for a deployed predictor.**. The team should not begin by selecting the most sophisticated tool. First, rewrite the situation as a decision: **what must be decided, by whom, using which evidence, and under which constraints?** That sentence establishes the boundary of the analysis.
 
-Next, create an inspectable baseline. For this module, a useful baseline should make **Problem framing: define the decision, population, workflow, or system boundary before choosing a method.** visible rather than hiding it inside an unsupported conclusion. Preserve the starting data or case facts, record the initial result, and identify the assumption most likely to change the recommendation. Then make one controlled comparison using **Baseline discipline: compare the proposed AI-enabled approach with an existing process, simple rule, or manual review pattern.**. Holding the other conditions fixed is what lets a reviewer interpret the difference.
+Next, create an inspectable baseline. For this module, a useful baseline should make **Problem framing: define the decision, population, workflow, or system boundary before choosing a method.** visible rather than hiding it inside an unsupported conclusion. Preserve the starting data or case facts, record the initial result, and identify the assumption most likely to change the recommendation. Then make one controlled comparison using **Baseline discipline: compare the proposed AI-enabled approach with an existing process, simple rule, or manual review pattern.**. Holding the other [conditions](../../glossary.md#condition) fixed is what lets a reviewer interpret the difference.
 
 Finally, connect the evidence to action. Use **Evidence quality: separate measured results from assumptions, anecdotes, vendor claims, and synthetic-data artifacts.** to explain why the observed result matters in the scenario, then state a limitation. The appropriate conclusion is conditional: recommend a next step only if the evidence clears a named threshold or review gate. This pattern—decision, baseline, controlled comparison, limitation, next gate—is the same structure expected in the assignment and rubric.
 
@@ -65,12 +65,12 @@ Before continuing, be able to answer: What is the baseline? What single factor c
 - [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) — Authoritative implementation and evaluation guidance.
 - [scikit-learn Model Evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html) — Metrics, scoring, validation, and error analysis.
 
-Use one specific section, control, example, or definition from these sources to qualify the worked example above. The complete curated list and source-use expectations are in [Authoritative Readings and Resources](../../resources.md).
+Use one specific section, control, example, or definition from these sources to qualify the worked example above. The complete curated [list](../../glossary.md#list) and source-use expectations are in [Authoritative Readings and Resources](../../resources.md).
 <!-- END COURSE EXPERIENCE REMEDIATION -->
 <!-- BEGIN SUBJECT-MATTER LESSON -->
 ## Subject-Matter Lesson
 
-A deployed model faces changing inputs, relationships, and workflows. Covariate drift means the feature distribution changes; concept drift means the relationship between features and target changes; label drift changes prevalence. Input drift is observable quickly but does not prove performance loss. Outcome-based monitoring is stronger but may arrive late or be selectively observed.
+A deployed model faces changing [inputs](../../glossary.md#input), relationships, and workflows. Covariate drift means the feature distribution changes; concept drift means the relationship between features and target changes; label drift changes prevalence. Input drift is observable quickly but does not prove performance loss. Outcome-based monitoring is stronger but may arrive late or be selectively observed.
 
 The lab fits a reference linear model, then evaluates twelve sequential batches whose target coefficient gradually changes. Error is compared with the reference-period error and an alert fires after a sustained multiplier is crossed. A single noisy batch should not automatically trigger retraining: the team needs minimum sample sizes, persistence rules, data-quality checks, and an owner who investigates causes.
 

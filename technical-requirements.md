@@ -2,24 +2,24 @@
 
 ## The Short Version
 
-The lowest-friction path is a current web browser plus **free Google Colab**. You do not need to buy software, own a GPU, or install Python to complete the supplied labs. Some modules demonstrate GPU-aware workflows, but the supplied labs use small or synthetic data and remain CPU-compatible. Use a GPU only when a lab explicitly labels it as an extension.
+The lowest-friction path is a current web browser plus **free [Google Colab](glossary.md#colab)**. You do not need to buy software, own a GPU, or install [Python](glossary.md#python) to complete the supplied labs. Some modules demonstrate GPU-aware workflows, but the supplied labs use small or synthetic data and remain CPU-compatible. Use a GPU only when a lab explicitly labels it as an extension.
 
 ## Student Hardware
 
 | Path | Minimum | Recommended | Cost |
 |---|---|---|---|
 | Colab | Current Chrome, Edge, Firefox, or Safari; stable broadband | 8 GB system memory and a keyboard suitable for coding | Free tier is sufficient |
-| GitHub Codespaces | Current browser; stable broadband | 8 GB system memory | Uses the GitHub account's available Codespaces quota |
+| [GitHub Codespaces](glossary.md#codespaces) | Current browser; stable broadband | 8 GB system memory | Uses the [GitHub](glossary.md#github) account's available Codespaces quota |
 | Local installation | 64-bit computer, 8 GB RAM, 4 GB free disk | 16 GB RAM, 10 GB free disk | No course software fee |
 
-Tablets can read course pages, but a laptop or desktop is strongly recommended for notebook editing and assignments.
+Tablets can read course pages, but a laptop or desktop is strongly recommended for [notebook](glossary.md#notebook) editing and assignments.
 
 ## Supported Software Versions
 
 - **Python 3.12** is the reference interpreter used by the course build and Codespaces configuration.
 - **Jupyter Book 1.0.4.post1** is pinned in `requirements.txt`.
-- **Git 2.40 or newer** is recommended only for local or Codespaces repository work.
-- The course dependency list, including JupyterLab, NumPy, Matplotlib, PyTorch, widgets, and RISE, is maintained in [`requirements.txt`](https://github.com/Aurnova/ains6002-course/blob/main/requirements.txt). Use that file as the authoritative package list rather than installing packages individually.
+- **[Git](glossary.md#git) 2.40 or newer** is recommended only for local or Codespaces [repository](glossary.md#repository) work.
+- The course dependency [list](glossary.md#list), including JupyterLab, NumPy, Matplotlib, PyTorch, widgets, and RISE, is maintained in [`requirements.txt`](https://github.com/Aurnova/ains6002-course/blob/main/requirements.txt). Use that [file](glossary.md#file) as the authoritative package list rather than installing packages individually.
 
 Rendered readings, slides, and narration require only a browser.
 
@@ -28,9 +28,9 @@ Rendered readings, slides, and narration require only a browser.
 1. Open the module's **Lab** link from [How to Use This Course](student-guide.md).
 2. Select the **Open in Colab** badge at the top of the notebook.
 3. Sign in with a Google account and choose **File → Save a copy in Drive** so your changes persist.
-4. Keep the default CPU runtime unless the lab explicitly asks for a GPU extension.
-5. Choose **Runtime → Run all**. Read the output before changing anything.
-6. Change one named parameter or input, rerun the relevant cells, and explain the difference.
+4. Keep the default CPU [runtime](glossary.md#runtime) unless the lab explicitly asks for a GPU extension.
+5. Choose **Runtime → Run all**. Read the [output](glossary.md#output) before changing anything.
+6. Change one named [parameter](glossary.md#parameter) or [input](glossary.md#input), rerun the relevant [cells](glossary.md#cell), and explain the difference.
 7. Submit the saved link or exported `.ipynb` file as directed by the instructor.
 
 If a GPU extension is assigned, choose **Runtime → Change runtime type → T4 GPU** when the free tier offers it. GPU availability is not guaranteed, so every required activity has a CPU path. **Colab Pro is optional and is not a course requirement.**
@@ -40,7 +40,7 @@ If a GPU extension is assigned, choose **Runtime → Change runtime type → T4 
 1. Open [the AINS6002 public cohort repository](https://github.com/Aurnova/ains6002-course) and select **Code -> Codespaces -> Create codespace on main**, or use [https://codespaces.new/Aurnova/ains6002-course](https://codespaces.new/Aurnova/ains6002-course).
 2. Wait for dependency installation and the `AINS6002` Python kernel registration to finish.
 3. Open a lab or assignment notebook and select the course Python kernel when prompted.
-4. To preview the book, run `make html`, then `python -m http.server 8000 --directory _build/html` in the terminal.
+4. To preview the book, run `make html`, then `python -m http.server 8000 --directory _build/html` in the [terminal](glossary.md#terminal).
 
 Use Codespaces when an activity needs multiple files, Git, tests, or a complete project. It is not required for first-time notebook practice.
 

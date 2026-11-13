@@ -77,3 +77,4 @@ chapters:
       - file: modules/module-8/narration
       - file: modules/module-8/rubric
       - file: notebooks/module-8-lab
+  - file: glossary

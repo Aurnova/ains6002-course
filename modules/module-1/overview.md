@@ -5,7 +5,7 @@ Prediction tasks and data framing
 
 ## Essential Question
 
-What decision is the model actually supporting?
+What decision is the [model](../../glossary.md#model) actually supporting?
 
 ## Module Components
 
@@ -14,15 +14,15 @@ What decision is the model actually supporting?
 - `Slides`: presentation sequence for seminar or lecture delivery
 - `Narration`: spoken version of the slide flow
 - `Rubric`: criteria for evaluating the module artifact
-- `Notebook`: executable lab aligned with the module theme using synthetic tabular observations with features, labels, train/test split, baseline score, and error slices
+- `Notebook`: executable lab aligned with the module theme using synthetic tabular observations with [features](../../glossary.md#feature), labels, train/test split, [baseline](../../glossary.md#baseline) score, and error slices
 
 ## Module Artifact
 
-predictive modeling report with baseline comparison, validation evidence, and model card focused on prediction tasks and data framing: Frame a supervised learning task from raw business or research data.
+predictive modeling report with baseline comparison, [validation](../../glossary.md#validation) evidence, and model card focused on prediction tasks and data framing: Frame a supervised learning task from raw business or research data.
 
 ## Professional Setting
 
-Students work as if advising an analytics team choosing a predictive model for an operational decision. Their work must be intelligible to analytics lead, domain owner, operations manager, and model risk reviewer.
+Students work as if advising an analytics team choosing a predictive model for an operational decision. Their work must be intelligible to analytics lead, domain owner, operations manager, and model [risk](../../glossary.md#risk) reviewer.
 
 <!-- BEGIN COURSE EXPERIENCE REMEDIATION -->
 ## Use This Module in Order

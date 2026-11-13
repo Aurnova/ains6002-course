@@ -19,5 +19,6 @@ parse:
     - html_image
 sphinx:
   config:
+    myst_heading_anchors: 3
     html_title: AINS6002 Machine Learning & Predictive Modeling
     html_baseurl: https://ains6002.courses.castalia.institute/book/

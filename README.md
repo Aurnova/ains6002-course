@@ -48,3 +48,11 @@ jupyter lab --ip 0.0.0.0 --port 8888 --no-browser
 ## Notes
 
 This public repository contains the student-facing cohort package. Institutional source materials and non-student-facing records are maintained separately.
+
+<!-- AINS5000 READINESS -->
+## Programming readiness and concept help
+
+New to programming or the course tools? [AINS5000: Programming Concepts and Tools for AI](https://aurnova.github.io/ains5000-course/book/intro.html) provides short lessons on GitHub accounts, Colab, Codespaces, Python concepts, saving work, and asking for help. Use its [quick reference](https://aurnova.github.io/ains5000-course/book/reference.html) to jump directly to the skill an activity requires.
+
+The [cross-course glossary](glossary.md) links definitions to foundational explanations and related AINS graduate lessons. It supports the published book and slide references. Your instructor's access, assessment, and submission instructions remain authoritative.
+<!-- END AINS5000 READINESS -->
